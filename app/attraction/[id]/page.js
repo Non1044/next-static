@@ -22,6 +22,11 @@ export async function generateMetadata({ params }) {
         title: data.attraction.name,
         description: data.attraction.detail,
         siteName: 'Travel App',
+        images:[
+            {
+                url:data.attraction.coverimage,
+            },
+        ],
       },
     }
   }
